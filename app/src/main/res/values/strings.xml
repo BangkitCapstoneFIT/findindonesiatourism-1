@@ -49,6 +49,7 @@
     <string name="full_name">Full name</string>
     <string name="fill_in_your_full_name">Fill in your full name</string>
     <string name="fitdevteam_bangkit_academy">fitdevteam@bangkit.academy</string>
+    <string name="number_phone">081xxxxxxxxx</string>
     <string name="username_or_email_address">Username or email address</string>
     <string name="fill_in_your_username_or_email_address">Fill in your username or email address</string>
     <string name="region_image">Region Image</string>
@@ -59,4 +60,35 @@
     <string name="region_name">Region Name</string>
     <string name="_17_destinations">17 Destinations</string>
     <string name="background_content">Background Content</string>
+    <string name="message_title_category">Indonesian Tourism Categories</string>
+    <string name="category_name">Category Name</string>
+    <string name="beaches">Beaches</string>
+    <string name="lakes">Lakes</string>
+    <string name="waterfall">Waterfall</string>
+    <string name="mountains">Mountains</string>
+    <string name="message_title_explore">Explore Your Travel Destination</string>
+    <string name="message_title_favorite">My Favorite Travel Destinations</string>
+    <string name="rating">Rating</string>
+    <string name="message_profile">Please change in the profile settings from to user profile data.</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="type_in_the_destination_you_want">Type in the destination you want</string>
+    <string name="showing_120_tourist_destinations_in_kalimantan">Showing 120 tourist destinations in Kalimantan</string>
+    <string name="beach">Beach</string>
+    <string name="nearby">Nearby</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="details">Details</string>
+    <string name="monday_6_00_am_6_00_pm">Monday: 6:00 AM – 6:00 PM</string>
+    <string name="pantai_tiga_warna_malang">Malang Three Color Beach</string>
+    <string name="place_status">Place Status</string>
+    <string name="opening_days_and_hours">Opening Days and Hours</string>
+    <string name="address">Address</string>
+    <string name="maps">Maps</string>
+    <string name="more_information">More Information</string>
+    <string name="accommodation_and_lodging">Accommodation and Lodging</string>
+    <string name="more_photos">More Photos</string>
+    <string name="reviews">Reviews</string>
+    <string name="open_now">Open Now</string>
+    <string name="gunung_kupang_kec_curah_dami_kabupaten_bondowoso_jawa_timur_68251_indonesia">Gunung, Kupang, Kec. Curah Dami, Kabupaten Bondowoso, Jawa Timur 68251, Indonesia</string>
+    <string name="add_to_my_favorite">Add to My Favorite</string>
 </resources>

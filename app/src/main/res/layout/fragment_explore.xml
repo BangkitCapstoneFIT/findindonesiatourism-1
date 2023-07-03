@@ -1,13 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/explore_layout"
+    style="@style/SearchTextColor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Background">
 
+    <EditText
+        android:id="@+id/explore_input_search"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="@string/type_in_the_destination_you_want"
+        android:importantForAutofill="no"
+        android:inputType="text|textEmailAddress"
+        android:paddingStart="12dp"
+        android:textColor="@color/Primary"
+        android:textColorHint="@color/Primary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explore_message"
+        tools:ignore="RtlSymmetry" />
+
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/explore_message"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Explore Fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
-</RelativeLayout>
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/message_title_explore"
+        android:textColor="@color/Primary"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/explore_showing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/showing_120_tourist_destinations_in_kalimantan"
+        android:textColor="@color/Primary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explore_input_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/explore_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explore_showing"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_row_explore" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="15dp"
+    android:orientation="horizontal"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:elevation="50dp"
+        tools:ignore="RtlSymmetry">
+
+
+        <ImageView
+            android:id="@+id/popularImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/region_image"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/java" />
+
+        <ImageView
+            android:id="@+id/bgContent"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:alpha="0.3"
+            app:layout_constraintBottom_toBottomOf="@+id/popularImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/button_disable"
+            android:contentDescription="@string/background_content" />
+
+        <TextView
+            android:id="@+id/popularName"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/region_name"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bgContent" />
+
+        <RatingBar
+            android:id="@+id/popularRating"
+            style="@android:style/Widget.Material.Light.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:layout_marginBottom="6dp"
+            android:numStars="5"
+            android:progressBackgroundTint="@color/white"
+            android:progressTint="@color/white"
+            android:rating="3.6"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:stepSize="0.5"
+            app:layout_constraintBottom_toBottomOf="@+id/popularImage"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

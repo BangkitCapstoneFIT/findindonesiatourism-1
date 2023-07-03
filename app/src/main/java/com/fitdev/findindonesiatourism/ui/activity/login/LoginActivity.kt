@@ -16,7 +16,7 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.fitdev.findindonesiatourism.dataclass.loginData
+import com.fitdev.findindonesiatourism.dataclass.users.loginData
 import com.fitdev.findindonesiatourism.remote.api.users.ApiConfig
 import com.fitdev.findindonesiatourism.remote.response.login.LoginResponse
 import com.fitdev.findindonesiatourism.remote.response.login.UserLoggedInItem
@@ -120,6 +120,7 @@ class LoginActivity : AppCompatActivity() {
                         userData[0].let{
                             editor.putString("ID", it.id)
                             editor.putString("FULL_NAME", it.fullname)
+                            editor.putString("USERNAME", it.username)
                             editor.putString("EMAIL", it.email)
                             editor.putString("PHONE_NUMBER", it.phoneNumber)
                             editor.putString("PROFILE_IMAGE", it.profileImage)
